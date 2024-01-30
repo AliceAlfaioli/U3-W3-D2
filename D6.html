@@ -143,7 +143,14 @@
        Scrivi una funzione che aggiunga un paragrafo al primo div
     */
 
-      const addParagraph = function () {};
+      const addParagraph = function () {
+        const div = document.querySelectorAll("div");
+        const p = document.createElement("p");
+        p.innerText = "paragrafo";
+        div.appendChild(p);
+      };
+
+      addParagraph();
 
       /* ESERCIZIO 7
        Scrivi una funzione che faccia scomparire la prima lista non ordinata
